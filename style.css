@@ -1,0 +1,36 @@
+/* el punto indica el nombre de la clase */
+/* clase de CSS es artista */
+
+.text_footer {
+  font-size: 11px;
+  text-align: center;
+}
+.text_footer a {
+  color: hsl(228, 45%, 44%);
+}
+
+.contenedor {
+  background-color: transparent;
+}
+
+h1{
+  color: hsl(300, 43%, 22%);
+}
+
+
+.rated-card {
+  list-style: none;
+}
+
+.rated-card li{
+  background-color: hsl(300, 24%, 96%);
+  margin: 16px;
+  border-radius: 18px;
+  padding: 16px;
+  color: hsl(300, 43%, 22%);
+  font-weight: bold;
+}
+
+.etrellita {
+  content: url(./images/icon-star.svg)
+}
