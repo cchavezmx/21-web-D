@@ -1,10 +1,38 @@
 /* el punto indica el nombre de la clase */
 /* clase de CSS es artista */
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+:root {
+  font-family: 'League Spartan', sans-serif;
+  font-size: 15px;
+  --very-mark-magenta: hsl(300, 43%, 22%);
+  --soft-pink: hsl(333, 80%, 67%);
+  --dark-grayish-magenta: hsl(303, 10%, 53%);
+  --light-grayish-magenta: hsl(300, 24%, 96%);
+  --white: hsl(0, 0%, 100%);
+}
+
+/* css reset */
+html, body {  
+  font-size: 100%; 
+  margin: 0px;
+  padding: 0px;
+  box-sizing: inherit;
+}
+
+*:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 20px;
+}
 
 .text_footer {
   font-size: 11px;
   text-align: center;
 }
+
 .text_footer a {
   color: hsl(228, 45%, 44%);
 }
@@ -14,23 +42,56 @@
 }
 
 h1{
-  color: hsl(300, 43%, 22%);
+  color: var(--very-mark-magenta);
 }
-
 
 .rated-card {
   list-style: none;
+  width: 600px;
 }
 
 .rated-card li{
-  background-color: hsl(300, 24%, 96%);
+  background-color: var(--light-grayish-magenta);
+  font-size: 20px;
   margin: 16px;
-  border-radius: 18px;
+  border-radius: 8px;
   padding: 16px;
-  color: hsl(300, 43%, 22%);
+  color: var(--very-mark-magenta);
   font-weight: bold;
 }
 
 .etrellita {
   content: url(./images/icon-star.svg)
+}
+
+
+.user-card {
+  width: 400px;  
+  background-color: var(--very-mark-magenta);
+  border-radius: 16px;
+  padding: 26px;
+  color: var(--light-grayish-magenta);
+  margin: 8px;
+}
+
+.user-card h6 {
+  font-size: 20px;
+  /* margin: 0;
+  margin-bottom: 5px; */
+/* top, bottom - left rigth    */
+  margin: 10px 0;
+        /* top rigth bottom left */
+  /* margin: 10px  0       0      0; */
+
+}
+
+.user-card strong {
+  color: var(--soft-pink);
+  font-weight: normal;
+}
+
+.user-card img  {
+  width: 80px;
+  height: 80px;
+  border-radius: 999px;
 }
