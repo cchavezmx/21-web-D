@@ -1,0 +1,63 @@
+* {
+  background-color: #f2f2f2;
+}
+
+:root {
+  font-size: 40px;
+}
+
+body{
+  /* overflow: hidden; */
+  height: 100vh;
+  width: 10vw;
+}
+
+.padre {
+  background-color: #818181;
+  border: 1px solid red;
+  width: 12.5rem;
+  height: 400px;
+  margin: 4px;
+}
+
+.hijo {
+  /* unidades absolutas PX */
+  background-color: rgb(40, 118, 171);
+  /* font-size: 43px; */
+  font-weight: bold;
+  color: white;
+
+  /* width: 10rem; */
+  /* height: 20%; */
+  /* em y los rem */
+}
+
+@media (min-width: 60rem) {
+  .hijo {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+
+/* em que dejemos de usar los em's*/
+/* y para diseños reponsivos usemos px, % o rem y vh, vw */
+
+/* main {
+  font-size: 1.125rem;
+}
+article {
+  font-size: 0.9rem;
+}
+p.intro {
+  font-size: 1.25rem;
+}
+
+button {
+  padding: 16px;
+  margin: 8px;
+  border-radius: 4px;
+  border: none;
+  width: 200px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+} */
