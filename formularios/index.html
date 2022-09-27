@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="./style.css"
+      rel="stylesheet"
+    />
+    <title>Lo último en técnologia</title>
+    <!-- los campos de id y name son de control interno dentro de JS -->
+    <!-- el campo de type, es especifico al tipo de input que se necesita implemetnar, sea de text, number, range, date -->
+    <!-- El campo for se ocupa en las etiquetas (label) para que de forma accescible al darle click podamos hacer un focus en el input referido -->
+    <!-- de forma predeterminada todos los inputs son de tipo texto -->
+
+    <!-- todos los campos tiene un atributo de tipo value o defaultValue -->
+    <!-- value="Carlos Chavez Rosario" -->
+    <!-- tener un formulario para -->
+  </head>
+  <body>
+    <h1 class="title">Noticias de técnologia</h1>
+    <section>
+      <article>
+        <h2>Noticia del dia</h2>
+        asdasdasdasdasdasd
+      </article>
+    </section>
+    <div>
+      <form id="formulario">
+        <label>
+          Usuario
+          <input 
+            id="usuario" 
+            name="usuario" 
+            type="text"
+            placeholder="Escribre tu nombre de usuario"
+          />
+        </label>
+        <!-- para accesibilidad -->
+        <label for="password">Contraseña</label>
+        <input 
+          id="password" 
+          name="password" 
+          type="password"
+          placeholder="Ingresa tu contraseña" 
+        />
+        <label for="search">Buscador</label>
+        <input 
+          id="search" 
+          name="search" 
+          type="search"
+          placeholder="Busca lo que quieras"
+        />
+        <label for="email">Correo Eléctronico</label>
+        <input 
+          id="email" 
+          name="email" 
+          type="email"
+          placeholder="Ingresa tu correo eléctronico"
+        />
+        <label for="age">Edad</label>
+        <input 
+          id="age" 
+          name="age"
+          min="0"
+          max="100"
+          type="number"
+          placeholder="Ingresa tu edad"
+        />
+        <label for="range">Califica</label>
+        <input 
+          id="range" 
+          name="range"
+          min="0"
+          max="100"
+          type="range"
+        />
+        <label for="specialDate">Fecha nacimiento</label>
+        <input 
+          id="specialDate"
+          name="specialDate"
+          type="date"
+        />
+        <label class="text-archivo" for="archivo">📷</label>
+        <input 
+          class="archivo"
+          id="archivo"
+          name="data"
+          type="file"
+        />
+        <labe for="pinaSi">Te gusta la piña</labe>
+        <input           
+          id="pinaSi"
+          name="pinaSi"
+          type="radio"
+        />
+        <label>Te gusta el formulario</label>
+        <input           
+          id="pinaNo"
+          name="pinaNo"
+          type="checkbox"
+          checked
+        />
+        <label>Text área sin placeholder</label>
+        <textarea 
+          id="observacion"
+          name="observacion"
+          rows="10"
+          cols="50">
+          Ingresa tu observación
+        </textarea>
+        <label>Text área con placeholder</label>
+        <textarea 
+          id="observacion"
+          name="observacion"
+          rows="10" cols="50"
+          placeholder="Hola amigos"></textarea>
+
+        <label for="lista">Selector</label>
+        <select id="lista" name="lista">
+          <option>Hawiana</option>
+          <option>Peperoni</option>
+          <option>Mexicana</option>
+        </select>
+
+        <!-- simular o tener un buscador -->
+        <label for="lista">Data List</label>
+        <input type="search" list="lista2" />
+        <datalist id="lista2" name="lista2">
+          <option>Volver al futuro</option>
+          <option>Volver al futuro I</option>
+          <option>Volver al futuro II</option>
+          <option>Volver al futuro III</option>
+          <option>Robocop</option>
+          <option>Rocky</option>
+          <option>Matrix</option>
+        </datalist>
+
+        <label>Colores</label>
+        <input   
+          class="input-color"        
+          id="color"
+          name="color"
+          type="color"
+          value="#1BF44A"
+        />
+        
+        <div class="controles">
+          <button type="submit">Enviar</button>
+          <button type="reset">Cancelar</button>
+          <button type="button">Otra cosa</button>
+        </div>
+        
+
+      </form>      
+    </div>
+  </body>
+</html>

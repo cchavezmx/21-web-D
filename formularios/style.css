@@ -1,0 +1,64 @@
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} 
+
+button {
+  padding: 16px;
+  margin: 4px;
+  border-radius: 8px;
+  width: 8rem;
+  border: none;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  background-color: rgb(56, 127, 186);
+  color: white;
+}
+
+/* pseudo Elementos CSS */
+button:hover {
+  background-color: rgb(8, 93, 163);
+  cursor: pointer;
+}
+
+button:active {
+  background-color: white;
+  color:rgb(8, 93, 163);
+
+}
+
+input, select {
+  padding: 16px;
+  margin: 4px;
+  min-height: 20px;
+  border-radius: 8px;
+  width: 500px;
+  border: 1px solid rgb(249, 249, 249);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;  
+}
+
+label {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0 4px 0;  
+}
+
+.controles {
+  display: flex;
+  justify-content: center;
+}
+
+.archivo {
+  display: none;
+}
+
+.text-archivo {
+  font-size: 40px;
+}
+
+.input-color {
+  height: 40px;
+  width: 40px;
+  padding: 0px;
+}
